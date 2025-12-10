@@ -131,6 +131,14 @@ section p {
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
+/* Preço dos produtos */
+.card .price {
+  padding: 0 15px 15px 15px;
+  font-size: 1rem;
+  color: #1A73E8;
+  font-weight: 600;
+}
+
 /* Botão flutuante WhatsApp */
 .whatsapp-button {
   position: fixed;
@@ -171,3 +179,4 @@ footer {
     margin-top: 10px;
   }
 }
+
