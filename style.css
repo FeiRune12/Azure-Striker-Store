@@ -7,8 +7,9 @@
 }
 
 body {
-  background-color: #F7F7F7;
-  color: #333333;
+  background: url(imagens/bg-desktop-mobile.png) no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
   line-height: 1.6;
 }
 
@@ -27,13 +28,13 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
 }
 
 header .logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #1A73E8;
+  color: #006eff;
 }
 
 nav a {
@@ -44,7 +45,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #1A73E8;
+  color: #398fff;
 }
 
 /* Banner principal */
@@ -60,7 +61,7 @@ nav a:hover {
 
 .banner h1 {
   font-size: 2.8rem;
-  color: #1A73E8;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -89,7 +90,7 @@ section {
 
 section h2 {
   font-size: 2rem;
-  color: #1A73E8;
+  color: #ffffff;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -139,6 +140,7 @@ section p {
   font-weight: 600;
 }
 
+
 /* Botão flutuante WhatsApp */
 .whatsapp-button {
   position: fixed;
@@ -179,4 +181,3 @@ footer {
     margin-top: 10px;
   }
 }
-
