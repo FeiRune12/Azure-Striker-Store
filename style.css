@@ -253,3 +253,18 @@ footer {
   }
 }
 
+/* Permitir o texto quebrar em 2 linhas no celular */
+@media (max-width: 480px) {
+  .brand {
+    flex-direction: column;
+    align-items: flex-start;  /* opcional: fica mais natural */
+  }
+
+  .brand-text {
+    font-size: 15px;          /* deixa mais confortável no mobile */
+    white-space: normal;      /* permite quebrar a linha */
+    line-height: 1.2;
+    text-align: left;
+  }
+}
+
