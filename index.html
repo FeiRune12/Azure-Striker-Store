@@ -6,88 +6,109 @@
   <title>Azure Striker Store</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="imagens/logo.png" sizes="32x32">
+<link rel="apple-touch-icon" href="imagens/logo.png">
+
 </head>
 <body>
 
+  
   <!-- Header -->
-  <header>
-    <div class="logo">Azure Striker Store - A loja confiavel de Design Grafico!</div>
-    <nav>
-      <a href="#arte-digital">Arte Digital</a>
-      <a href="#design-profissional">Design Profissional</a>
-    </nav>
-  </header>
+  <header class="dark">
+  <a href="/" class="brand">
+    <!-- imagem principal (horizontal) -->
+    <img
+      src="imagens/logo.png"
+      srcset="imagens/logo.png 1x, imagens/logo.png 2x"
+      alt="ASL - Azure Striker Store"
+      class="logo-img"
+      width="150"
+      height="60"
+    >
+    <!-- texto acessível/backup (visível em casos que não carregue a imagem) -->
+    <span class="brand-text">Azure Striker Store / Azure Striker Loja</span>
+  </a>
 
-  <!-- Banner -->
-  <div class="banner">
-    <h1>Arte & Design, criadas para o seu dia</h1>
-    <p>Transforme suas ideias em Arte Digital e Design Profissional</p>
-    <a href="#arte-digital">Ver Produtos</a>
-  </div>
+  <nav>
+    <a href="#arte-digital">Arte Digital</a>
+    <a href="#design-profissional">Design Profissional</a>
+  </nav>
+</header>
 
-  <!-- Arte Digital -->
+
 <section id="arte-digital">
-  <h2>Arte Digital</h2>
-  <p>Capas, Posters e Desenhos criativos e profissionais</p>
-  <div class="grid">
-    <!-- Capas -->
-    <div class="card">
-      <img src="imagens/Capa Gunvolt - Lola.png" alt="Capa 1">
-      <h3>Capa 1 - Anime/Jogo</h3>
-      <p class="price">R$ 50 - 100</p>
-    </div>
-    <div class="card">
-      <img src="imagens/Ferrari Spider - Lola.png" alt="Capa 2">
-      <h3>Capa 2 - Carro</h3>
-      <p class="price">R$ 50 - 100</p>
-    </div>
-       <div class="card">
-      <img src="imagens/Capa Flores que Crescem em Tempestades.png" alt="Capa 3">
-      <h3>Capa 3 - Livro</h3>
-      <p class="price">R$ 50 - 100</p>
-    </div>
-    <!-- Posters -->
-    <div class="card">
-      <img src="imagens/Link Capa - Lola.png" alt="Poster 1">
-      <h3>Poster 1 - Jogo</h3>
-      <p class="price">R$ 40 - 80</p>
-    </div>
-    <div class="card">
-      <img src="imagens/Mazda RX7 - Lola.png" alt="Poster 2">
-      <h3>Poster 2 - Carro</h3>
-      <p class="price">R$ 40 - 80</p>
-    </div>
-  </div>
-</section>
+    <h2>Arte Digital</h2>
+    <p>Capas, Posters e Desenhos criativos e profissionais</p>
 
-<!-- Design Profissional -->
-<section id="design-profissional">
-  <h2>Design Profissional</h2>
-  <p>Logomarcas, Identidade Visual e Banners de alta qualidade</p>
-  <div class="grid">
-    <!-- Banners -->
-    <div class="card">
-      <img src="https://via.placeholder.com/400x250" alt="Banner 1">
-      <h3>Banner 1</h3>
-      <p class="price">R$ 80</p>
+    <div class="grid">
+
+        <!-- Capa -->
+        <div class="card">
+            <img src="imagens/Capa Gunvolt - Lola.png" alt="Capa 1">
+            <h3>Capa 1 - Anime/Jogo</h3>
+            <p class="price">R$ 50 - 100</p>
+            <a class="order-btn" href="https://wa.me/5511966076576?text=Quero%20encomendar%20a%20Capa%201" target="_blank">
+                Encomendar
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="imagens/Mazda RX7 - Lola.png" alt="Capa 2">
+            <h3>Capa 2 - Carro</h3>
+            <p class="price">R$ 50 - 100</p>
+            <a class="order-btn" href="https://wa.me/5511966076576?text=Quero%20encomendar%20a%20Capa%202" target="_blank">
+                Encomendar
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="imagens/Capa Flores que Crescem em Tempestades.png" alt="Capa 3">
+            <h3>Capa 3 - Livro</h3>
+            <p class="price">R$ 50 - 100</p>
+            <a class="order-btn" href="https://wa.me/5511966076576?text=Quero%20encomendar%20a%20Capa%203" target="_blank">
+                Encomendar
+            </a>
+        </div>
+
+        <!-- Posters -->
+        <div class="card">
+            <img src="imagens/Link Capa - Lola.png" alt="Poster 1">
+            <h3>Poster 1 - Jogo</h3>
+            <p class="price">R$ 40 - 80</p>
+            <a class="order-btn" href="https://wa.me/5511966076576?text=Quero%20encomendar%20o%20Poster%201" target="_blank">
+                Encomendar
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="imagens/poster2.png" alt="Poster 2">
+            <h3>Poster 2 - Carro</h3>
+            <p class="price">R$ 40 - 80</p>
+            <a class="order-btn" href="https://wa.me/5511966076576?text=Quero%20encomendar%20o%20Poster%202" target="_blank">
+                Encomendar
+            </a>
+        </div>
+
+        <!-- Logos e Banners -->
+        <div class="card">
+            <img src="imagens/logo1.png" alt="Logo">
+            <h3>Logo Profissional</h3>
+            <p class="price">R$ 50</p>
+            <a class="order-btn" href="https://wa.me/5511966076576?text=Quero%20uma%20Logo%20Profissional" target="_blank">
+                Encomendar
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="imagens/banner1.png" alt="Banner">
+            <h3>Banner Profissional</h3>
+            <p class="price">R$ 80</p>
+            <a class="order-btn" href="https://wa.me/5511966076576?text=Quero%20um%20Banner%20Profissional" target="_blank">
+                Encomendar
+            </a>
+        </div>
+
     </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/400x250" alt="Banner 2">
-      <h3>Banner 2</h3>
-      <p class="price">R$ 80</p>
-    </div>
-    <!-- Logos -->
-    <div class="card">
-      <img src="https://via.placeholder.com/400x250" alt="Logo 1">
-      <h3>Logo 1</h3>
-      <p class="price">R$ 50</p>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/400x250" alt="Logo 2">
-      <h3>Logo 2</h3>
-      <p class="price">R$ 50</p>
-    </div>
-  </div>
 </section>
 
   <!-- Botão flutuante WhatsApp -->
@@ -103,5 +124,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
