@@ -22,12 +22,20 @@ cards.forEach(card => {
 function abrirModal(imagem, titulo, descricao, preco, mensagem) {
   const overlay = document.getElementById("modal-overlay");
 
+  if (!overlay) {
+    console.error("modal-overlay não encontrado");
+    return;
+  }
+
   document.getElementById("modal-img").src = imagem;
   document.getElementById("modal-title").textContent = titulo;
   document.getElementById("modal-desc").textContent = descricao;
   document.getElementById("modal-price").textContent = preco;
 
-  const texto = encodeURIComponent(mensagem);
+  const texto = encodeURIComponent(
+    `Olá! Quero encomendar:\n${titulo}\n\nTema:\nPrazo:\nReferências:`
+  );
+
   document.getElementById("modal-link").href =
     "https://wa.me/5511966076576?text=" + texto;
 
@@ -35,5 +43,6 @@ function abrirModal(imagem, titulo, descricao, preco, mensagem) {
 }
 
 function fecharModal() {
-  document.getElementById("modal-overlay").style.display = "none";
+  const overlay = document.getElementById("modal-overlay");
+  if (overlay) overlay.style.display = "none";
 }
