@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azure Striker Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="imagens/logo.png">
+<link rel="shortcut icon" href="imagens/logo.png" type="image/png">
+
+</head>
+<body>
+
+  
+<header class="navbar">
+  <a href="#" class="brand">
+    <img
+      src="imagens/logo.png"
+      srcset="imagens/logo.png 1x, imagens/logo.png 2x"
+      alt="ASL - Azure Striker Store"
+      class="logo-img"
+      width="150"
+      height="60"
+    >
+    <span class="brand-text">Azure Striker Store / Azure Striker Loja</span>
+  </a>
+</header>
+
+
+
+  <nav>
+    <a href="#arte-digital">Arte Digital</a>
+    <a href="#design-profissional">Design Profissional</a>
+  </nav>
+
+
+<!-- ARTE DIGITAL -->
+<section id="arte-digital">
+  <h2>Arte Digital</h2>
+  <p>Capas, Posters e Desenhos criativos e profissionais</p>
+
+  <div class="grid">
+
+ <div class="card"
+  onclick="abrirModal(
+    'imagens/Capa Gunvolt - Lola.png',
+    'Capa 1',
+    'Capa personalizada para jogos, animes ou projetos criativos.',
+    'R$ 50 - 100',
+    'Quero encomendar a Capa 1 com o tema:'
+  )">
+
+  <img src="imagens/Capa Gunvolt - Lola.png" alt="Capa 1">
+  <h3>Capa 1</h3>
+  <p class="desc">Capa personalizada para jogos, animes ou projetos criativos.</p>
+  <p class="price">R$ 50 - 100</p>
+
+  <button class="order-btn">Ver detalhes</button>
+</div>
+
+
+<!-- Capa 2 -->
+<div class="card"
+  onclick="abrirModal(
+    'imagens/Mazda RX7 - Lola.png',
+    'Capa 2',
+    'Arte visual focada em veículos, cenários ou estética moderna.',
+    'R$ 50 - 100',
+    'Quero encomendar a Capa 2 com o tema:'
+  )">
+
+  <img src="imagens/Mazda RX7 - Lola.png" alt="Capa 2">
+  <h3>Capa 2</h3>
+  <p class="desc">Arte visual focada em veículos, cenários ou estética moderna.</p>
+  <p class="price">R$ 50 - 100</p>
+
+  <button class="order-btn">Ver detalhes</button>
+</div>
+
+
+    <!-- Capa 3 -->
+<div class="card"
+  onclick="abrirModal(
+    'imagens/Capa Flores que Crescem em Tempestades.png',
+    'Capa 3',
+    'Ideal para livros, projetos autorais e capas conceituais.',
+    'R$ 50 - 100',
+    'Quero encomendar a Capa 3 com o tema:'
+  )">
+
+  <img src="imagens/Capa Flores que Crescem em Tempestades.png" alt="Capa 3">
+  <h3>Capa 3</h3>
+  <p class="desc">Ideal para livros, projetos autorais e capas conceituais.</p>
+  <p class="price">R$ 50 - 100</p>
+
+  <button class="order-btn">Ver detalhes</button>
+</div>
+
+
+    <!-- Poster 1 -->
+<div class="card"
+  onclick="abrirModal(
+    'imagens/Link Capa - Lola.png',
+    'Poster 1',
+    'Poster artístico para decoração ou projetos pessoais.',
+    'R$ 40 - 80',
+    'Quero encomendar o Poster 1 com o tema:'
+  )">
+
+  <img src="imagens/Link Capa - Lola.png" alt="Poster 1">
+  <h3>Poster 1</h3>
+  <p class="desc">Poster artístico para decoração ou projetos pessoais.</p>
+  <p class="price">R$ 40 - 80</p>
+
+  <button class="order-btn">Ver detalhes</button>
+</div>
+
+
+  <!-- Poster 2 -->
+<div class="card"
+  onclick="abrirModal(
+    'imagens/Lamborghini LP750-4 Superveloce - Lola.png',
+    'Poster 2',
+    'Arte focada em carros, ação e impacto visual.',
+    'R$ 40 - 80',
+    'Quero encomendar o Poster 2'
+  )">
+
+  <img src="imagens/Lamborghini LP750-4 Superveloce - Lola.png" alt="Poster 2">
+  <h3>Poster 2</h3>
+  <p class="desc">Arte focada em carros, ação e impacto visual.</p>
+  <p class="price">R$ 40 - 80</p>
+
+  <button class="order-btn">Ver detalhes</button>
+</div>
+
+
+<!-- Desenho 1 -->
+<div class="card"
+  onclick="abrirModal(
+    'imagens/desenho1.png',
+    'Desenho 1 - Personagem',
+    'Desenho de personagem original ou fanart personalizada.',
+    'R$ 40 - 80',
+    'Quero encomendar o Desenho 1'
+  )">
+
+  <img src="imagens/desenho1.png" alt="Desenho 1">
+  <h3>Desenho 1 - Personagem</h3>
+  <p class="desc">Desenho de personagem original ou fanart personalizada.</p>
+  <p class="price">R$ 40 - 80</p>
+
+  <button class="order-btn">Ver detalhes</button>
+</div>
+
+
+<!-- Desenho 2 -->
+<div class="card"
+  onclick="abrirModal(
+    'imagens/desenho2.png',
+    'Desenho 2 - Estilo Cartoon',
+    'Arte leve e expressiva com estilo cartoon.',
+    'R$ 40 - 80',
+    'Quero encomendar o Desenho 2'
+  )">
+
+  <img src="imagens/desenho2.png" alt="Desenho 2">
+  <h3>Desenho 2 - Estilo Cartoon</h3>
+  <p class="desc">Arte leve e expressiva com estilo cartoon.</p>
+  <p class="price">R$ 40 - 80</p>
+
+  <button class="order-btn">Ver detalhes</button>
+</div>
+
+
+<!-- Desenho 3 -->
+<div class="card"
+  onclick="abrirModal(
+    'imagens/desenho2.png',
+    'Desenho 3 - Estilo Anime',
+    'Ilustração inspirada em estética anime e mangá.',
+    'R$ 40 - 80',
+    'Quero encomendar o Desenho 3'
+  )">
+
+  <img src="imagens/desenho2.png" alt="Desenho 3">
+  <h3>Desenho 3 - Estilo Anime</h3>
+  <p class="desc">Ilustração inspirada em estética anime e mangá.</p>
+  <p class="price">R$ 40 - 80</p>
+
+  <button class="order-btn">Ver detalhes</button>
+</div>
+
+
+  </div>
+</section>
+
+
+<!-- DESIGN PROFISSIONAL -->
+<section id="design-profissional">
+  <h2>Design Profissional</h2>
+  <p>Logos, Identidades Visuais e Banners profissionais</p>
+
+  <div class="grid">
+
+   <!-- Logo -->
+<div class="card"
+  onclick="abrirModal(
+    'imagens/IgnisLab Logo.png',
+    'Logo Profissional',
+    'Criação de logotipo profissional para marcas e projetos.',
+    'R$ 50',
+    'Quero uma Logo Profissional'
+  )">
+
+  <img src="imagens/IgnisLab Logo.png" alt="Logo Profissional">
+  <h3>Logo Profissional</h3>
+  <p class="desc">Criação de logotipo profissional para marcas e projetos.</p>
+  <p class="price">R$ 50</p>
+
+  <button class="order-btn">Ver detalhes</button>
+</div>
+
+
+<!-- Banner -->
+<div class="card"
+  onclick="abrirModal(
+    'imagens/Azure Striker Store Banner.png',
+    'Banner Profissional',
+    'Banner visual para redes sociais, sites ou divulgação.',
+    'R$ 80',
+    'Quero um Banner Profissional'
+  )">
+
+  <img src="imagens/Azure Striker Store Banner.png" alt="Banner Profissional">
+  <img src="imagens/GV e Kirin Banner - Lola V2.png" alt="Banner Profissional">
+  <img src="imagens/GV Banner 2.png" alt="Banner Profissional">
+  <h3>Banner Profissional</h3>
+  <p class="desc">Banner visual para redes sociais, sites ou divulgação.</p>
+  <p class="price">R$ 80</p>
+
+  <button class="order-btn">Ver detalhes</button>
+</div>
+
+
+<!-- Ícone 1 -->
+<div class="card"
+  onclick="abrirModal(
+    'imagens/Joker Profile Pic.png',
+    'Ícone Personalizado',
+    'Ícone exclusivo feito sob medida para perfis ou marcas.',
+    'R$ 70 - 85',
+    'Quero um Ícone Personalizado'
+  )">
+
+  <img src="imagens/Joker Profile Pic.png" alt="Ícone Personalizado">
+  <h3>Ícone Personalizado</h3>
+  <p class="desc">Ícone exclusivo feito sob medida para perfis ou marcas.</p>
+  <p class="price">R$ 70 - 85</p>
+
+  <button class="order-btn">Ver detalhes</button>
+</div>
+
+
+<!-- Ícone 2 -->
+<div class="card"
+  onclick="abrirModal(
+    'imagens/Fei Icon.png',
+    'Ícone Estilizado',
+    'Arte estilizada com identidade visual marcante.',
+    'R$ 70 - 85',
+    'Quero um Ícone Estilizado'
+  )">
+
+  <img src="imagens/Fei Icon.png" alt="Ícone Estilizado">
+  <h3>Ícone Estilizado</h3>
+  <p class="desc">Arte estilizada com identidade visual marcante.</p>
+  <p class="price">R$ 70 - 85</p>
+
+  <button class="order-btn">Ver detalhes</button>
+</div>
+
+
+  </div>
+</section>
+
+<!-- COSTURA E CROCHÊ -->
+<section class="categoria" id="costura-croche">
+  <h2>Design de Costura e Crochê</h2>
+
+  <div class="grid">
+
+    <!-- Bolsinha Modelo A -->
+    <div class="card"
+      onclick="abrirModal(
+        'imagens/costura1.png',
+        'Bolsinha Artesanal – Modelo A',
+        'Bolsinha feita à mão, ideal para uso diário ou presente.',
+        'R$ 25 - 60',
+        'Quero encomendar a Bolsinha Artesanal Modelo A'
+      )">
+
+      <img src="imagens/costura1.png" alt="Bolsinha Artesanal – Modelo A">
+      <h3>Bolsinha Artesanal – Modelo A</h3>
+      <p class="desc">Bolsinha feita à mão, ideal para uso diário ou presente.</p>
+      <p class="price">R$ 25 - 60</p>
+
+      <button class="order-btn">Ver detalhes</button>
+    </div>
+
+    <!-- Amigurumi Modelo B -->
+    <div class="card"
+      onclick="abrirModal(
+        'imagens/croche1.png',
+        'Amigurumi Pequeno – Modelo B',
+        'Amigurumi artesanal em crochê, feito sob encomenda.',
+        'R$ 40 - 120',
+        'Quero encomendar o Amigurumi Modelo B'
+      )">
+
+      <img src="imagens/croche1.png" alt="Amigurumi Pequeno – Modelo B">
+      <h3>Amigurumi Pequeno – Modelo B</h3>
+      <p class="desc">Amigurumi artesanal em crochê, feito sob encomenda.</p>
+      <p class="price">R$ 40 - 120</p>
+
+      <button class="order-btn">Ver detalhes</button>
+    </div>
+
+    <!-- Carteira Linha Suave -->
+    <div class="card"
+      onclick="abrirModal(
+        'imagens/croche2.png',
+        'Carteira de Crochê – Linha Suave',
+        'Carteira leve e delicada em crochê artesanal.',
+        'R$ 30 - 70',
+        'Quero encomendar a Carteira de Crochê Linha Suave'
+      )">
+
+      <img src="imagens/croche2.png" alt="Carteira de Crochê – Linha Suave">
+      <h3>Carteira de Crochê – Linha Suave</h3>
+      <p class="desc">Carteira leve e delicada em crochê artesanal.</p>
+      <p class="price">R$ 30 - 70</p>
+
+      <button class="order-btn">Ver detalhes</button>
+    </div>
+
+    <!-- Amigurumi Estilo Livre -->
+    <div class="card"
+      onclick="abrirModal(
+        'imagens/costura2.png',
+        'Amigurumi – Estilo Livre',
+        'Criação livre em crochê com cores e formato personalizados.',
+        'R$ 25 - 80',
+        'Quero encomendar o Amigurumi Estilo Livre'
+      )">
+
+      <img src="imagens/costura2.png" alt="Amigurumi – Estilo Livre">
+      <h3>Amigurumi – Estilo Livre</h3>
+      <p class="desc">Criação livre em crochê com cores e formato personalizados.</p>
+      <p class="price">R$ 25 - 80</p>
+
+      <button class="order-btn">Ver detalhes</button>
+    </div>
+
+    <!-- Item Personalizado -->
+    <div class="card"
+      onclick="abrirModal(
+        'imagens/personalizado.png',
+        'Item Personalizado – Sob Encomenda',
+        'Projeto exclusivo de costura ou crochê conforme pedido.',
+        'R$ 20 - 150',
+        'Quero um item personalizado de costura ou crochê'
+      )">
+
+      <img src="imagens/personalizado.png" alt="Item Personalizado – Sob Encomenda">
+      <h3>Item Personalizado – Sob Encomenda</h3>
+      <p class="desc">Projeto exclusivo de costura ou crochê conforme pedido.</p>
+      <p class="price">R$ 20 - 150</p>
+
+      <button class="order-btn">Ver detalhes</button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5511966076576?text=Olá,%20tenho%20uma%20dúvida"
+   class="whatsapp-button"
+   target="_blank"
+   rel="noopener">
+   💬 WhatsApp | Tire suas Dúvidas
+</a>
+
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Fei | Arte & Design Profissional
+  </footer>
+
+  <script src="script.js"></script>
+
+    <!-- MODAL PRODUTO -->
+<div class="modal-overlay" id="modal-overlay" onclick="fecharModal()">
+  <div class="modal" onclick="event.stopPropagation()">
+
+    <button class="modal-close" onclick="fecharModal()">×</button>
+
+    <div class="modal-content">
+      <div class="modal-image">
+        <img id="modal-img">
+      </div>
+
+      <div class="modal-info">
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+        <p id="modal-price"></p>
+
+        <a id="modal-link" target="_blank" rel="noopener">
+          Encomendar no WhatsApp
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
