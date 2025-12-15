@@ -444,10 +444,11 @@ footer {
   margin: 0 auto;
   padding: 0 6%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px;
   align-items: center;
 }
+
 
 .hero.hidden {
   opacity: 0;
@@ -460,33 +461,37 @@ footer {
 
 
 .hero-content h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 16px;
+  font-size: 3.2rem;
+  line-height: 1.15;
+  max-width: 520px;
 }
+
 
 .hero-content p {
-  font-size: 1.1rem;
-  max-width: 520px;
-  line-height: 1.6;
-  opacity: 0.9;
+  font-size: 1.15rem;
+  max-width: 480px;
+  margin-top: 12px;
 }
+
 
 .hero-actions {
+  margin-top: 36px;
   display: flex;
-  gap: 16px;
-  margin-top: 32px;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.btn-primary {
-  background: #1A73E8;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 10px;
-  font-weight: 600;
-  transition: transform 0.2s, box-shadow 0.2s;
+.hero-actions a {
+  padding: 18px 36px;
+  font-size: 1.05rem;
+  border-radius: 12px;
 }
+
+
+.btn-primary {
+  min-width: 220px;
+  text-align: center;
+}
+
 
 .btn-primary:hover {
   transform: translateY(-2px);
@@ -494,13 +499,8 @@ footer {
 }
 
 .btn-secondary {
-  background: #f2f2f2; /* ou a cor que você já usa */
-  color: #000;         /* TEXTO PRETO */
-  border: none;
-  padding: 12px 20px;
-  border-radius: 10px;
-  font-weight: 600;
-  cursor: pointer;
+  min-width: 200px;
+  text-align: center;
 }
 
 
@@ -534,12 +534,9 @@ footer {
 
 .intro-overlay {
   position: fixed;
-  top: 72px; /* altura da navbar */
-  left: 0;
-  width: 100%;
-  height: calc(100vh - 72px);
-
+  inset: 0; /* cobre tudo */
   background: linear-gradient(rgb(5, 0, 71), rgb(0, 75, 150));
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -547,6 +544,7 @@ footer {
   z-index: 10000; /* abaixo da navbar */
   transition: opacity 0.4s ease;
 }
+
 
 .intro-overlay.hidden {
   opacity: 0;
@@ -556,28 +554,33 @@ footer {
 
 
 .intro-modal {
-  background: #111;
+  background: rgba(0, 0, 0, 0.75);
   color: #ffffff;
-  padding: 190px;
-  border-radius: 16px;
-  max-width: 1080px;
-  width: 90%;
+
+  padding: 48px 56px;
+  border-radius: 18px;
+
+  width: 100%;
+  max-width: 720px;   /* 🔥 isso segura o layout */
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  z-index: 10000;
+  align-items: flex-start; /* profissional */
+  text-align: left;
+
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
 }
+
+
 
 .intro-actions {
   display: flex;
-  gap: 12px;
+  gap: 20px;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 
-/* navbar começa escondida */
 .uix {
   position: fixed;
   top: 0;
@@ -590,13 +593,6 @@ footer {
   backdrop-filter: blur(10px);
 
   z-index: 12000; /* acima da intro */
-}
-
-
-/* navbar aparece depois do intro */
-.uix.show {
-  opacity: 1;
-  pointer-events: auto;
 }
 
 /* container centralizado */
@@ -631,12 +627,6 @@ footer {
   color: #ffffff;
   white-space: nowrap;
 }
-
-.uix.show {
-  opacity: 1;
-  pointer-events: auto;
-}
-
 
 /* links */
 .barra {
@@ -692,4 +682,115 @@ footer {
   }
 }
 
+/* =========================================================
+   INTRO OVERLAY – AJUSTE FINAL (SEGURO)
+========================================================= */
+
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgb(2, 6, 23);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000; /* abaixo da navbar */
+}
+
+.intro-modal {
+  background: linear-gradient(
+    135deg,
+    rgba(2, 6, 23, 0.92),
+    rgba(15, 23, 42, 0.92)
+  );
+  border-radius: 24px;
+  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.6);
+}
+
+
+.intro-modal h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.intro-modal p {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+
+/* Ajuste do tamanho dos botões */
+.intro-actions .btn-primary,
+.intro-actions .btn-secondary {
+  padding: 20px 40px; /* Aumentando o tamanho dos botões */
+  font-size: 1.2rem; /* Aumentando o texto */
+  min-width: 250px; /* Largura mínima para botões */
+  border-radius: 8px; /* Borda mais arredondada */
+}
+
+.intro-actions .btn-primary {
+  background-color: #ffffff00;
+  border:#dbe4ff 2px solid;
+  border-radius: 8px; /* Cor de fundo do botão principal */
+  color: #fff;
+}
+
+.intro-actions .btn-primary:hover {
+  background-color: #ffffff00; /* Cor de hover do botão principal */
+}
+
+.intro-actions .btn-secondary {
+  background-color: #f2f2f2; /* Cor de fundo do botão secundário */
+  color: #000;
+}
+
+.intro-actions .btn-secondary:hover {
+  background-color: #ffffff; /* Cor de hover do botão secundário */
+  color: #020617; /* Cor do texto no hover */
+}
+
+/* Garantir um bom espaçamento entre os botões */
+.intro-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+
+/* desktop: tudo alinhado à esquerda */
+@media (min-width: 900px) {
+  .intro-modal {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+/* mobile: centralizado */
+@media (max-width: 899px) {
+  .intro-modal {
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-actions {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .intro-actions .btn-primary,
+  .intro-actions .btn-secondary {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+/* esconder intro */
+.intro-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
 
