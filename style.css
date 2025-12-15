@@ -304,6 +304,7 @@ footer {
   max-height: 90vh;
   overflow: hidden;
   position: relative;
+  color: #ffffff;
 }
 
 
@@ -554,3 +555,4 @@ footer {
   justify-content: center;
   margin-top: 20px;
 }
+
