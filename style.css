@@ -19,6 +19,7 @@ body {
   background-size: cover;
   color: #ffffff;
   line-height: 1.6;
+  padding-top: 72px;
 }
 
 body.modal-open {
@@ -409,7 +410,7 @@ footer {
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+  z-index: 11000;
 }
 
 .modal-overlay.active {
@@ -533,31 +534,39 @@ footer {
 
 .intro-overlay {
   position: fixed;
-  inset: 0; /* top, right, bottom, left = 0 */
-  background: linear-gradient(rgb(5, 0, 71),rgb(0, 75, 150));
+  top: 72px; /* altura da navbar */
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 72px);
+
+  background: linear-gradient(rgb(5, 0, 71), rgb(0, 75, 150));
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+
+  z-index: 10000; /* abaixo da navbar */
   transition: opacity 0.4s ease;
 }
+
 .intro-overlay.hidden {
   opacity: 0;
   pointer-events: none;
 }
 
 
+
 .intro-modal {
   background: #111;
   color: #ffffff;
-  padding: 32px;
+  padding: 190px;
   border-radius: 16px;
-  max-width: 420px;
+  max-width: 1080px;
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  z-index: 10000;
 }
 
 .intro-actions {
@@ -565,4 +574,82 @@ footer {
   gap: 12px;
   justify-content: center;
   margin-top: 20px;
+}
+
+
+/* navbar começa escondida */
+.uix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+
+  background: rgba(2, 6, 23, 0.85);
+  -webkit-backdrop-filter: blur();
+  backdrop-filter: blur(10px);
+
+  z-index: 12000; /* acima da intro */
+}
+
+
+/* navbar aparece depois do intro */
+.uix.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* container centralizado */
+.uix-container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo */
+.uix-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.uix-logo-img {
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.uix-logo-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.uix.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/* links */
+.barra {
+  display: flex;
+  gap: 28px;
+}
+
+.barra a {
+  color: #dbe4ff;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.barra a:hover {
+  color: #82b6ff;
 }
