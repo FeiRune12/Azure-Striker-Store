@@ -257,12 +257,13 @@ section p {
    FOOTER
 ----------------------------------------------------------- */
 footer {
-  background-color: #EAEAEA;
+  background-color: #eaeaea00;
   text-align: center;
   padding: 20px 0;
   font-size: 0.9rem;
-  color: #000;
+  color: #ffffff;
 }
+
 
 /* -----------------------------------------------------------
    RESPONSIVIDADE
@@ -555,4 +556,5 @@ footer {
   justify-content: center;
   margin-top: 20px;
 }
+
 
